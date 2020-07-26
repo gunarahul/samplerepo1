@@ -16,7 +16,7 @@ public class seleniumtest {
 	public static void initDriver() {
 		String prjpath=System.getProperty("user.dir");
 		//System.setProperty("webdriver.chrome.driver", "/home/devops/devOpsProjTest/chromedriver.exe");
-		System.setProperty("webdriver.chrome.driver", "/usr/lib/chromium-browser/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		
 		
 		
