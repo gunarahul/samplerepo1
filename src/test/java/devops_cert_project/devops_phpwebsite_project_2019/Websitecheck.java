@@ -9,23 +9,25 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
 public class Websitecheck {
 	
 	
-	ChromeDriver driver = null;
+	HtmlUnitDriver driver = null;
 	
 	 @BeforeClass
 	  public void beforeClass() {
-		 System.setProperty("webdriver.chrome.driver","/home/devops/devOpsProjTest/chromedriver.exe");
-		  
-		  driver = new ChromeDriver();
+		 
+		 // System.setProperty("webdriver.chrome.driver","/home/devops/devOpsProjTest/chromedriver.exe");
+		   //driver = new ChromeDriver();
+		  driver = new HtmlUnitDriver();
 		  driver.get("http://192.168.56.101:8010/");
 		  driver.manage().window().maximize();
-		  driver.manage().timeouts().implicitlyWait(70,TimeUnit.SECONDS);
-		  driver.manage().window().maximize();
+		  //driver.manage().timeouts().implicitlyWait(70,TimeUnit.SECONDS);
+		  //driver.manage().window().maximize();
 		  
 	  }
 	 
