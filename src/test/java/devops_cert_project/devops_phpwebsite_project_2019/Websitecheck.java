@@ -14,12 +14,14 @@ import org.testng.annotations.AfterClass;
 
 public class Websitecheck {
 	
-	System.setProperty("webdriver.chrome.driver","chromedriver.exe");
-	ChromeDriver driver = new ChromeDriver();
+	
+	ChromeDriver driver = null;
 	
 	 @BeforeClass
 	  public void beforeClass() {
-		 
+		 System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+		  
+		  driver = new ChromeDriver();
 		  driver.get("http://192.168.56.101:8010/");
 		  driver.manage().window().maximize();
 		  driver.manage().timeouts().implicitlyWait(70,TimeUnit.SECONDS);
