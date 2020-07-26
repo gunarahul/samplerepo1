@@ -32,7 +32,7 @@ public class seleniumtest {
 	}
 	
 	@Test
-	public static void pageCheck() {
+	public static void pageCheck() throws InterruptedException  {
 		 String x =driver.getTitle();
 	  assertEquals(x, "Home | Simple PHP Website");
 	  System.out.println(x);
