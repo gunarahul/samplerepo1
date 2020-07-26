@@ -36,30 +36,7 @@ public class seleniumtest {
 		 String x =driver.getTitle();
 	  assertEquals(x, "Home | Simple PHP Website");
 	  System.out.println(x);
-	  
-	// driver.findElement(By.id("id")).sendKeys("About Us");
-	  driver.findElement(By.id("About Us")).click();
-		Thread.sleep(2000);
-	  
-	//String y=   driver.findElement(By.xpath("//*[@id=\"PID-ab2-pg\"]/text()[2]")).getText();
-	  //System.out.println(y);
-	//*[@id="PID-ab2-pg"]/text()[2]
-	  
-	  boolean text= driver.getPageSource().contains("Lorem Ipsum Dipsum is simply dummy text of the printing and typesetting industry. ");
-	  System.out.println(text);
-	  
-	  //String expectedText= "Lorem Ipsum Dipsum is simply dummy text of the printing and typesetting industry.";
-        //System.out.println(expectedText);
-        
-      
-        boolean flag = false;
-        if (text)
-        	{
-        	flag = true;
-        	System.out.println("the website is deployed successfully  and it's running fine");
-        	}
-        
-        Assert.assertTrue(flag, "Looks like there is some issue,please check");
+
 	}
 	
 	
