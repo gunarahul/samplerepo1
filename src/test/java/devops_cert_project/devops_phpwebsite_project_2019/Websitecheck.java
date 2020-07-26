@@ -19,7 +19,7 @@ public class Websitecheck {
 	
 	 @BeforeClass
 	  public void beforeClass() {
-		 System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+		 System.setProperty("webdriver.chrome.driver","/home/devops/devOpsProjTest/chromedriver.exe");
 		  
 		  driver = new ChromeDriver();
 		  driver.get("http://192.168.56.101:8010/");
