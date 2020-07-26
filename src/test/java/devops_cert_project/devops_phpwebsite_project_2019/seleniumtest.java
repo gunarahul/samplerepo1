@@ -15,7 +15,11 @@ public class seleniumtest {
 	@BeforeTest
 	public static void initDriver() {
 		String prjpath=System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver", "/home/devops/devOpsProjTest/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "/home/devops/devOpsProjTest/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/usr/lib/chromium-browser/chromedriver.exe");
+		
+		
+		
 		driver = new ChromeDriver();
 		driver.get("https://finviz.com");
 		driver.manage().window().maximize();
