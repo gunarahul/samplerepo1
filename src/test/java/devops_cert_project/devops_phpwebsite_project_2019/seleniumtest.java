@@ -23,8 +23,8 @@ public class seleniumtest {
 		//driver = new ChromeDriver();
 		driver = new HtmlUnitDriver();
 		driver.get("https://www.google.com");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		//driver.manage().window().maximize();
+		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
 	
 	@Test
