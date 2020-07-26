@@ -26,7 +26,7 @@ public class seleniumtest {
 		
 		//driver = new ChromeDriver();
 		driver = new HtmlUnitDriver();
-		driver.get("https://www.google.com");
+		driver.get("http://35.238.110.205:8080");
 		//driver.manage().window().maximize();
 		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
