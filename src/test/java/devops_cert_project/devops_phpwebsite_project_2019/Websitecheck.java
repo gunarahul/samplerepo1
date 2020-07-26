@@ -25,8 +25,8 @@ public class Websitecheck {
 		   //driver = new ChromeDriver();
 		  driver = new HtmlUnitDriver();
 		  //driver.get("http://192.168.56.101:8010/");
-		  driver.get("http://35.238.110.205:8080/");
-		  driver.manage().window().maximize();
+		  driver.get("http://35.238.110.205:8080");
+		  //driver.manage().window().maximize();
 		  //driver.manage().timeouts().implicitlyWait(70,TimeUnit.SECONDS);
 		  //driver.manage().window().maximize();
 		  
