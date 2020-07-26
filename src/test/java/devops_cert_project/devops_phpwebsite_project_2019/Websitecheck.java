@@ -14,6 +14,7 @@ import org.testng.annotations.AfterClass;
 
 public class Websitecheck {
 	
+	System.setProperty("webdriver.chrome.driver","chromedriver.exe");
 	ChromeDriver driver = new ChromeDriver();
 	
 	 @BeforeClass
